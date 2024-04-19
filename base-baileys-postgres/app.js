@@ -8,11 +8,11 @@ const PostgreSQLAdapter = require('@bot-whatsapp/database/postgres')
  * Declaramos las conexiones de PostgreSQL
  */
 
-const POSTGRES_DB_HOST = 'localhost'
-const POSTGRES_DB_USER = 'postgres'
-const POSTGRES_DB_PASSWORD = 'lionelmessi'
-const POSTGRES_DB_NAME = 'botcf'
-const POSTGRES_DB_PORT = '5432'
+const POSTGRES_DB_HOST = '...'
+const POSTGRES_DB_USER = '....'
+const POSTGRES_DB_PASSWORD = '...'
+const POSTGRES_DB_NAME = '...'
+const POSTGRES_DB_PORT = '...'
 
 /**
  * Aqui declaramos los flujos hijos, los flujos se declaran de atras para adelante, es decir que si tienes un flujo de este tipo:
