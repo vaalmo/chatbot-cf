@@ -102,7 +102,105 @@ const flowPuntoVentaTodas = addKeyword(['todas', 'toda', 'sedes', 'puntos', 'Tod
 
 
 const flowPuntoVentaCerca = addKeyword(['Cerca', 'cerca', 'serca', 'Serca', 'Ciudad', 'Departamento', 'ciudad', 'departamento','antioquia'])
-    .addAnswer('En que departamento y ciudad se ubica?🌎')   
+    .addAnswer(
+        ['En que departamento y ciudad se ubica?🌎 Ingrese el número correspondiente:',
+        '1. Sector Centro Medellín',
+        '2. Sector La América',
+        '3. Sector Sur Vallé de Aburrá',
+        '4. Sector Oriente Antioqueño',
+        '5. Sector Urabá',
+        'Estas son los sectores que manejamos en el momento. Gracias por confiar en nosotros!',],
+    null,
+    null,
+    [flowPuntoVentaCentro,flowPuntoVentaAmerica,flowPuntoVentaSur,flowPuntoVentaOrienteAnt,flowPuntoVentaUraba])
+
+const flowPuntoVentaCentro = addKeyword(['1','Uno','uno','Centro','centro'])
+    .addAnswer('Tenemos los siguientes puntos de venta ubicados en Medellín: ')  
+    .addAnswer(
+        ['SECTOR CENTRO: ',
+        '',
+        'Punto de venta AMADOR',
+        'Dirección: Carrera 51 #45-10 ',
+        'Número de whatsapp: 3113010398',
+        'Horario de atención: Lunes a viernes de 7:00am a 6:00pm     Sábado de 7:00am a 4:00pm',
+        'Punto de venta CENTRO',
+        'Dirección: Carrera 48 #42-101 ',
+        'Número de whatsapp: 3207975653',
+        'Horario de atención: Lunes a viernes de 7:00am a 5:00pm     Sábado de 7:30am a 2:00pm',
+        'Punto de venta PALACÉ',
+        'Dirección: Carrera 50 #42-90 ',
+        'Número de whatsapp: 3218312125',
+        'Horario de atención: Lunes a viernes de 7:00am a 5:30pm     Sábado de 7:30am a 4:00pm'])  
+
+
+    .addAnswer(
+        ['Punto de venta AMADOR',
+        'Dirección: Carrera 51 #45-10 ',
+        'Número de whatsapp: 3113010398',
+        'Horario de atención: Lunes a viernes de 7:00am a 6:00pm     Sábado de 7:30am a 4:00pm',])
+    .addAnswer(
+        ['Punto de venta CENTRO',
+        'Dirección: Carrera 48 #42-101 ',
+        'Número de whatsapp: 3207975653',
+        'Horario de atención: Lunes a viernes de 7:00am a 5:00pm     Sábado de 7:30am a 2:00pm',])
+    .addAnswer(
+        ['Punto de venta PALACÉ',
+        'Dirección: Carrera 50 #42-90 ',
+        'Número de whatsapp: 3218312125',
+        'Horario de atención: Lunes a viernes de 7:00am a 5:30pm     Sábado de 7:30am a 4:00pm',])
+        
+
+const flowPuntoVentaAmerica = addKeyword(['2','Dos','dos','America','america','La America','La america','la America','la america'])
+    .addAnswer('Tenemos los siguientes puntos de venta ubicados en Medellín: ')
+    .addAnswer(
+        ['SECTOR AMÉRICA: ',
+        '',
+        'Punto de venta AMÉRICA',
+        'Dirección: Carrera 84 #43-38 ',
+        'Número de whatsapp: 3202581910',
+        'Horario de atención: Lunes a viernes de 7:00am a 5:30pm     Sábado de 7:30am a 3:00pm',])
+    
+
+const flowPuntoVentaSur = addKeyword(['3','Tres','tres','Sur','Itagui','Itagüí','sur','itagui','itagüí','Itagüi','itagüi','Envigado','envigado'])
+    addAnswer('Tenemos los siguientes puntos de venta ubicados en el sur del Vallé de Aburrá: ')  
+    .addAnswer(
+        ['SECTOR SUR: ',
+        '',
+        'Punto de venta ITAGÜÍ',
+        'Dirección: Carrera 51A #46-44 ',
+        'Número de whatsapp: 3102195037',
+        'Horario de atención: Lunes a viernes de 7:00am a 5:30pm     Sábado de 7:30am a 3:00pm',
+        'Punto de venta ENVIGADO',
+        'Dirección: Carrera 37 sur #39-40 ',
+        'Número de whatsapp: 3207221553',
+        'Horario de atención: Lunes a viernes de 7:00am a 5:30pm     Sábado de 7:30am a 4:00pm',])
+
+
+const flowPuntoVentaOrienteAnt = addKeyword(['4','Cuatro','cuatro','oriente','Oriente','Rionegro','rionegro','Rio negro','rio negro','Porvenir','porvenir','ceja','Ceja','Llanogrande','llanogrande','Guarne',
+'guarne','el retiro','El Retiro','Retiro','retiro','Marinilla','marinilla'])
+    .addAnswer('Tenemos los siguientes puntos de venta ubicados en el Oriente Antioqueño: ')  
+    .addAnswer(
+        ['SECTOR ORIENTE ANTIOQUEÑO: ',
+        '',
+        'Punto de venta LA CEJA',
+        'Dirección: Carrera 27 #15-07 ',
+        'Número de whatsapp: 3235689613',
+        'Horario de atención: Lunes a viernes de 7:00am a 5:00pm     Sábado de 7:30am a 3:00pm',
+        'Punto de venta RIONEGRO',
+        'Dirección: Carrera 56 #39-40 ',
+        'Número de whatsapp: 3207221553',
+        'Horario de atención: Lunes a viernes de 7:00am a 5:30pm     Sábado de 7:30am a 4:00pm',])
+
+
+const flowPuntoVentaUraba = addKeyword(['5','Cinco','cinco','Urabá','urabá','Uraba','urabá','Apartadó','apartadó','Apartado','apartado','Chigorodó','Chigorodo'])
+    .addAnswer('Tenemos los siguientes puntos de venta ubicados en el Urabá Antioqueño: ') 
+    .addAnswer(
+        ['SECTOR URABÁ ANTIOQUEÑO: ',
+        '',
+        'Punto de venta APARTADÓ',
+        'Dirección: Carrera 101 #96-30 ',
+        'Número de whatsapp: 3202581900',
+        'Horario de atención: Lunes a viernes de 7:00am a 5:00pm     Sábado de 7:30am a 1:00pm',])
 
 
 const flowPuntoVenta = addKeyword(['Puntos', 'puntos', 'punto', 'Punto', 'Sede', 'sede', 'venta', 'Venta','sedes', 'Sedes', 'punto de venta', 'punto venta',])
@@ -120,8 +218,6 @@ const flowEnvio = addKeyword(['envio', 'enbio', 'envíos', 'envío', 'Envíos', 
     .addAnswer('Si claro realizamos envíos 🚚🏍️ nacionales y locales, nuestro centro de operación es en Medellín Antioquia y también contamos con 9 puntos de venta.')
     .addAnswer('En compras por nuestra página WEB 📲🛒💻 tenemos como política 8 días hábiles o antes para la entrega 🚛 🏍️ después de ser emitida la factura.')
     .addAnswer('El valor del envío🌎⚡✈️🚚🏍️ varía dependiendo de la ubicación, marca y tipo de producto🛠️⚙️🪛.') 
-
-
 
 
 const flowPrincipal = addKeyword(['hola', 'ola', 'buenas', 'buenaz', 'Buenas', 'vuenaz', 'Donde', 'Dónde','donde', 'dónde', 'cuándo', 'cuando'])
